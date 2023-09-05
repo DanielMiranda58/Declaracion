@@ -1,0 +1,85 @@
+*{
+    margin: auto;
+}
+
+body{
+    background-image: linear-gradient(135deg,#42f7e8, #3b408b, #ef3f80, #161569, #ef3f80, #505488, #00E7D4 );
+    background-size: 600%;
+    animation: fanimado 60s infinite;
+}
+.contenedor{
+
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+p{
+    font-size: xx-large;
+    padding: 5%;
+    color: beige;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button{
+    font-size: medium;
+    width: 100px;
+    padding: 0.75em;
+    border-radius: 10%;
+    background-color: rgb(150, 148, 144);
+    
+}
+
+#yesBtn{
+    transform: translate(-100%,0);
+    
+}
+
+#noBtn{
+    position: absolute;
+   
+   
+}
+
+#ms3{
+    display: none;
+}
+#modal::backdrop{
+background-color: rgba(0, 0,0, .55);
+
+font-family: 'Courier New', Courier, monospace;
+text-align: center;
+
+}
+#mod{
+    text-align: center;
+    margin: 10;
+}
+.h2{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+@keyframes animat {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fanimado{
+    0%{
+        background-image: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+
