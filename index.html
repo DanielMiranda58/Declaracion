@@ -5,65 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Declaracion</title>
-    <link rel="stylesheet" href="slider.css">
+  
     <link rel="stylesheet" href="estilos.css">
     
 </head>
 <body>
-    <div id="kiko-slider" >
+    <div id="contenedor" >
 
-        <ul class="slider" >
-            <li id="slide1" >
-                <iframe width="540" height="300" 
-                src="https://www.youtube.com/embed/JnSGTe6-i1Q?autoplay=1&loop=1"
-                title="WADE Y EMBER HACEN CONTACTO POR PRIMERA VEZ Elementos escena [Elemental] 
-                scene" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                 gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </li>
-            <li id="slide2">
         
-                 <iframe  width="540" height="300" src="https://www.youtube.com/embed/YJ3PiZ1B4ow?autoplay=1&loop=1"
-                 title="wade frase romantica" frameborder="0" 
-                 allow="accelerometer; autoplay; clipboard-write; 
-                 encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-             
-            </li>
-            <li id="slide3" class="contenedor">
-                <p>¿PUEDO SER TU NOVIO?</p>
-                <img src="interior_cake.png"/>
-            </li>
-        </ul>
+                <video  id="prueba1" autoplay muted loop controls >
+                    <source src="wade2.mp4" type="video/mp4"> 
+                 </Video>
+            
 
         <ul class="menu">
             <li>
-                <a onclick="ocultar();"href="#slide1"> &#127803</a>
+                <a id=a1 onclick="mostrar('wade2.mp4');" href="#slide1"> &#127803</a>
             </li>
             <li>
-                <a onclick="ocultar();" href="#slide2"> &#127803</a>
+                <a onclick="mostrar('videowade.mp4');" href="#slide2"> &#127803</a>
             </li>
             <li>
-                <a id=slide3  onclick="mostrar();" href="#slide3"> &#127803</a>
+                <a id=slide3 onclick="ocultar();"  href="parte2.html"> &#127803</a>
             </li>
         </ul>
 
     </div>
    
-    <div  class="contenedor">
-        <div id="ms3">
-            <button id="yesBtn">SI</button>
-            <button id="noBtn">NO</button>
-        </div>
+    
+        
         
 
-    </div id="mod" >
-    <dialog  id="modal">
-        <formulario acción="https://formsubmit.co/ danielmiranda5556@gmail.com" método="POST">
-        
-        <h2>Sin miedo al exito</h2>
-        <img src="flok2.jpg" alt="">
-        <input id="btn_cerrar" type="button" value="cerrar">
-    </formulario>
-    </dialog>
+    
 
     <script src="index.js"></script>
     

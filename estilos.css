@@ -8,12 +8,57 @@ body{
     animation: fanimado 60s infinite;
 }
 .contenedor{
-
-    width: 100vw;
-    height: 100vh;
-    text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
 }
+.container{
+    
 
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+  
+}
+.container img{
+    width: 250px;
+    height: 250px;
+}
+#prueba1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+li{
+    list-style: none;
+    
+}
+.menu{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu li{
+    list-style: none;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 4px;
+    background: #00E7D4;
+    padding: 3px 3px 0;
+    opacity: 0.7;
+}
+.menu li a{
+    width: 120px;
+    transition: 0.5s;
+}
 p{
     font-size: xx-large;
     padding: 5%;
@@ -41,9 +86,7 @@ button{
    
 }
 
-#ms3{
-    display: none;
-}
+
 #modal::backdrop{
 background-color: rgba(0, 0,0, .55);
 
